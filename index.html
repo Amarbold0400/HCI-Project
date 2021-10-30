@@ -3,9 +3,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <title>HCI Face Recognition</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <!-- Loader -->
+    <div class="loader">
+        <img src="media/loader-gif.gif">
+    </div>
+    <!-- Nuur huudas -->
+    <header class="header">
+        <video autoplay loop class="back-video" muted plays-inline>
+            <source src="media/face2.mp4" type="video/mp4">
+        </video>
+
+        <nav>
+           <a href="index.html">
+                <img src="media/logo.png" class="logo">
+           </a> 
+            <ul class="nav-links">
+                <li><a href="">Танилт</a></li>
+                <li><a href="ugugdul.html">Өгөгдөл Оруулах</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Face Recognition</h1>
+        </div>
+        <!-- Loader Script -->
+        <script src="scripts/loader.js"></script>
+    </header>
 </body>
 </html>
