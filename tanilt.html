@@ -15,17 +15,26 @@
     <title>Танилт</title>
 </head>
 <body>
+    <!-- Loader -->
+    <div class="loader">
+        <img src="media/loader-gif.gif">
+    </div>
+    <!-- Header And Nav -->
     <header class="header" id="header">
         <nav>
-            <a href="index.html">
+            <a href="/index.html">
                 <img src="media/logo.png" class="logo">
            </a>
            <ul class="nav-links">
-            <li><a href="ugugdul.html">Өгөгдөл</a></li>
+            <li>
+                <a id="swup" class="transition-fade" href="/ugugdul.html">
+                    Өгөгдөл
+                </a>
+            </li>
         </ul>
         </nav>
     </header>
-
+    <!-- Niit zuragnuudiig haruulna. Ugugdul.html-tei adilhan backend deeree herhen tootsoologdson baidlaas hamaaran eniig uurchilj yanzlaarai. -->
     <main id="swup" class="transition-fade">
         <div class="container" id="tanilt-container">
             <div class="image-grid">
@@ -71,5 +80,7 @@
             <p>All Rights Reserver by &copy; HCI-Project 2021</p>
         </div>
     </footer>
+    <!-- Loader Script -->
+    <script defer src="Scripts/loader.js"></script>
 </body>
 </html>
