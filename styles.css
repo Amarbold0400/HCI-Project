@@ -136,7 +136,7 @@ body{
 }
 
 #header nav{
-    padding-top: 10px;
+    padding-top: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -359,6 +359,18 @@ body{
 .social a li{
     padding: 10px 12px;
     font-size: 20px;
+}
+
+@media only screen and (max-height: 800px){
+    #header nav{
+        padding-top: 0px;
+    }
+    .nav-links{
+        padding: auto;
+    }
+    .container{
+        padding: 50px 200px;
+    }
 }
 
 /* Tanilt */
