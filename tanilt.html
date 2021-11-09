@@ -36,30 +36,50 @@
     </header>
     <!-- Niit zuragnuudiig haruulna. Ugugdul.html-tei adilhan backend deeree herhen tootsoologdson baidlaas hamaaran eniig uurchilj yanzlaarai. -->
     <main id="swup" class="transition-fade">
-        <div class="container" id="tanilt-container">
+        <div class="container">
+            <div class="box1">
+                <div class="wrapper">
+                    <div class="image">
+                        <img src=" " alt="">
+                    </div>
+                    <div class="content">
+                        <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <div class="text">Зураг сонгоогүй байна</div>
+                    </div>
+                    <div id="cancel-btn"><i class="fas fa-times"></i></div>
+                    <div class="file-name">Зургийн нэр</div>
+                </div>
+                <input id="default-btn" type="file" hidden>
+                <button onclick="defaultBtnActive()" id="custom-btn">Зураг сонгоно уу</button>
+                <button onclick="" id="custom-btn">Хадгалах</button>
+            </div>
+
+            <!-- Backend deh tootsologdson zuragnuudiin ur dung inchee haruulna. Ene zugeer iimerhuu baina gesen baidlaar hiisen. Backendteigee taaruulj yanzlaarai. 
+                 Uur yamar evteihen arga baina, eniig zasaj uurchilj bolno shuu. -->
             <div class="image-grid">
                 <img src="media/crimson2021.webp" alt="Crimson 2021">
-                <img src="media/crimson2020.webp" alt="Crimson 2020">
-                <img src="media/crimson2018.webp" alt="Crimson 2018">
-                <img src="media/crimson2016.webp" alt="Crimson 2016">
+                
             </div>
         </div>
     </main>
 
+    <!-- Zurag oruulah button script -->
+    <script defer src="Scripts/input.js"></script>
+
     <footer class="footer">
-        <div class="footer-top">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quia.
-            </p>
-            <div class="social">
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-instagram"></i></a>
-                <a href=""><i class="fa fa-twitter"></i></a>
-            </div>
-        </div>
         <ul class="footer-mid">
+            <li class="logoSocials">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quia.
+                </p>
+                <div class="social">
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                </div>
+            </li>
             <li>
-                <h2>Холбоо Барих</h2>
+                <h4>Холбоо Барих</h2>
                 <ul class="box">
                     <li><a href="">Утас: 99887766</a></li>
                     <li><a href="">Email: email@mail.com</a></li>
@@ -68,7 +88,7 @@
             </li>
 
             <li class="useful">
-                <h2>Тусламж</h2>
+                <h4>Тусламж</h2>
                 <ul class="box">
                     <li><a href="">Нүүр танилт гэж юу вэ?</a></li>
                     <li><a href="">Biometric Security гэж юу вэ?</a></li>

@@ -32,11 +32,11 @@
 .header{
     height: 100vh;
     width: 100%;
-    padding: 0 8%;
     position: relative;
 }
 
 nav{
+    padding: 0 8%;
     padding-top: 10px;
     display: flex;
     align-items: center;
@@ -98,26 +98,43 @@ nav{
 .back-video{
     object-fit: fill;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    top: 0;
+    left: 0;
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     z-index: -100;
+    opacity: 0.8;
 }
 
-@media(min-aspect-ratio:16/9){
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 68, 105, 0.35);
+    z-index: -99;
+}
+
+
+@media(min-aspect-ratio: 16/9){
     .back-video{
         width: 100%;
         height: auto;
     }
 }
 
-@media(min-aspect-ratio:16/9){
+@media(min-aspect-ratio: 16/9){
     .back-video{
         width: auto;
         height: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .back-video{
     }
 }
 
@@ -264,6 +281,24 @@ body{
     background: linear-gradient(135deg, #004469 0%, #03a5fc 100%);
 }
 
+#fname{
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    display: block;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 12px 20px 12px 40px;
+    background: linear-gradient(135deg, #03a5fc 0%, #004469 100%);
+}
+
 
 .image-grid{
     --gap: 10px;
@@ -298,8 +333,8 @@ body{
     flex: 1 100%;
 }
 
-.footer-top{
-    margin-top: 10px;
+.logoSocials{
+    margin-top: 40px;
     justify-content: center;
     text-align: center;
 }
@@ -315,7 +350,7 @@ body{
 
 .footer-mid{
     display: flex;
-    flex-wrap: row wrap;
+    /* flex-wrap: row wrap; */
     text-align: center;
     justify-content: center;
 }
@@ -323,8 +358,8 @@ body{
 .footer-mid > *{
     flex: 1 50%;
     margin-right: 1.25em;
+    font-size: 13px;
 }
-
 
 .footer-mid h2{
     padding: 5px 0;
@@ -340,9 +375,9 @@ body{
 .footer-bot{
     text-align: center;
     color: #fff;
-    padding: 10px 0;
+    padding: 5px 0;
+    font-size: 13px;
 }
-
 
 .social{
     margin-top: 10px;

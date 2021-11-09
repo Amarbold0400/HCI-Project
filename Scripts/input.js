@@ -20,6 +20,7 @@ defaultBtn.addEventListener("change", function(){
         cancelBtn.addEventListener("click", function(){
             img.src = " ";
             wrapper.classList.remove("active");
+            fileName.textContent = " ";
         });
         reader.readAsDataURL(file);
     }
