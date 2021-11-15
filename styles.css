@@ -143,6 +143,11 @@ body{
     background: #e8f7ff;
 }
 /* Ugugdul.html */
+::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
 #header{
     background: linear-gradient(135deg, #5ecef4 0%, #52c2ff 50%, #004469 100%);
     /* background:#474747; */
@@ -164,18 +169,21 @@ body{
 .container{
     display: flex;
     margin: 10px;
-    height: 80vh;
+    height: 72vh;
     width: auto;
-    padding: 100px 250px;
-    justify-content:space-between;
+    padding: 50px;
+    justify-content:space-around;
+    align-items: center;
     gap: 50px;
 }
 
 .box1{
     position: relative;
-    height: 350px;
+    height: 470px;
     width: 430px;
-    padding-top: 15px;
+    min-width: 400px;
+    min-height: 400px;
+    /* padding-top: 15px; */
 }
 
 .box1 .wrapper{
@@ -404,7 +412,7 @@ body{
         padding: auto;
     }
     .container{
-        padding: 50px 200px;
+        /* padding: 50px 200px; */
     }
 }
 
@@ -413,6 +421,23 @@ body{
     justify-content: center;
     align-items: center;
     padding: 50px 100px;
+}
+
+.output{
+    display: grid;
+    /* padding: 2rem; */
+    /* width: 300px; */
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+    align-items: center;
+    /* max-width: 800px; */
+    /* margin: 0 auto; */
+    font: 500 100%/1.5 system-ui;
+}
+
+.output > img{
+    max-width: 100%;
+    height: auto;
 }
 
 /* Transitions */
