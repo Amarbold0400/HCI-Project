@@ -50,22 +50,19 @@
                     <div id="cancel-btn"><i class="fas fa-times"></i></div>
                     <div class="file-name">Зургийн нэр</div>
                 </div>
-                <input id="default-btn" type="file" hidden>
-                <button onclick="defaultBtnActive()" id="custom-btn">Зураг сонгоно уу</button>
-                <button onclick="" id="custom-btn">Хадгалах</button>
-                <form>
+                <form id="uploadImageForm">
+                    <input id="default-btn" type="file" hidden name="file">
+                    <button type="button" onclick="defaultBtnActive()" id="custom-btn">Зураг сонгоно уу</button>
+                    <input type="text" id="fname" name="name" placeholder="Текст оруулна уу...">
+                    <button type="submit" id="custom-btn">Хадгалах</button>
                     <!-- <label for="fname">First Name</label> -->
-                    <input type="text" id="fname" placeholder="Текст оруулна уу...">
                 </form>
             </div>
 
             <!-- Backend deh tootsologdson zuragnuudiin ur dung inchee haruulna. Ene zugeer iimerhuu baina gesen baidlaar hiisen. Backendteigee taaruulj yanzlaarai. 
                  Uur yamar evteihen arga baina, eniig zasaj uurchilj bolno shuu. -->
             <div class="image-grid">
-                <img src="media/crimson2021.webp" alt="Crimson 2021">
-                <img src="media/crimson2020.webp" alt="Crimson 2020">
-                <img src="media/crimson2018.webp" alt="Crimson 2018">
-                <img src="media/crimson2016.webp" alt="Crimson 2016">
+                <img id="uploaded_image" src="media/crimson2021.webp" alt="Crimson 2021">
             </div>
         </div>
     </main>
