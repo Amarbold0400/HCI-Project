@@ -307,11 +307,11 @@ body{
     height: 100%;
     opacity: 0;
     transition: all 0.5s;
-    box-shadow: 0 0 10px 40px grey;
+    box-shadow: 0 0 10px 40px #006194;
   }
 
 #custom-btn:active:after {
-    box-shadow: 0 0 0 0 grey;
+    box-shadow: 0 0 0 0 #006194;
     position: absolute;
     border-radius: 4em;
     left: 0;
@@ -340,6 +340,10 @@ body{
     cursor: pointer;
     padding: 12px 20px 12px 40px;
     background: linear-gradient(135deg, #03a5fc 0%, #004469 100%);
+}
+
+#fname:hover{
+    background: linear-gradient(135deg, #54c3ff 0%, #006fab 100%);
 }
 
 
@@ -415,28 +419,35 @@ body{
     color: #fff;
 }
 
+.box li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+
+.box li a::after{
+    content: '';
+    background: #03a5fc;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.box li a:hover::after{
+    width: 100%;
+}
+
+
+
 .footer-bot{
     text-align: center;
     color: #fff;
     padding: 5px 0;
     font-size: 13px;
-}
-
-.social{
-    margin-top: 10px;
-}
-
-.social a{
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    margin-right: 10px;
-    color: white;
-}
-
-.social a li{
-    padding: 10px 12px;
-    font-size: 20px;
 }
 
 @media only screen and (max-height: 800px){
