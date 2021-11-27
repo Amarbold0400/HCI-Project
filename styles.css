@@ -133,10 +133,6 @@ nav{
     }
 }
 
-@media(max-width: 500px){
-    .back-video{
-    }
-}
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 body{
@@ -454,9 +450,6 @@ body{
     }
     .nav-links{
         padding: auto;
-    }
-    .container{
-        /* padding: 50px 200px; */
     }
 }
 
