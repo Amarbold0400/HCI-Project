@@ -169,7 +169,7 @@ body{
 .container{
     display: flex;
     margin: 10px;
-    height: 72vh;
+    height: 85vh;
     width: auto;
     padding: 50px;
     justify-content:space-around;

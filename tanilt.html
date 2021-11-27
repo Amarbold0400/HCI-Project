@@ -40,7 +40,7 @@
             <div class="box1">
                 <div class="wrapper">
                     <div class="image">
-                        <img src=" " alt="">
+                        <img alt="">
                     </div>
                     <div class="content">
                         <div class="icon"><i class="fas fa-cloud-upload-alt"></i></div>
@@ -49,29 +49,17 @@
                     <div id="cancel-btn"><i class="fas fa-times"></i></div>
                     <div class="file-name">Зургийн нэр</div>
                 </div>
-                <input id="default-btn" type="file" hidden>
-                <button onclick="defaultBtnActive()" id="custom-btn">Зураг сонгоно уу</button>
-                <button onclick="" id="custom-btn">Хайх</button>
-            </div>
-
-            <!-- Backend deh tootsologdson zuragnuudiin ur dung inchee haruulna. Ene zugeer iimerhuu baina gesen baidlaar hiisen. Backendteigee taaruulj yanzlaarai. 
-                 Uur yamar evteihen arga baina, eniig zasaj uurchilj bolno shuu. -->
-            <div class="output">
-                <!-- <div class="item1">
-                    <img src="media/crimson2021.webp" alt="Crimson 2021">
-                    <p>Text text text...</p>
-                </div> -->
-                <img src="media/crimson2021.webp" alt="Crimson 2021">
-                <p>Text text text...</p>
-
-                <img src="media/crimson2021.webp" alt="Crimson 2021">
-                <p>Text text text...</p>
+                <form id="searchImage">
+                    <input id="default-btn" type="file" hidden>
+                    <button type="button" onclick="defaultBtnActive()" id="custom-btn">Зураг сонгоно уу</button>
+                    <button type="submit" id="custom-btn">Хайх</button>
+                </form>
             </div>
         </div>
     </main>
 
     <!-- Zurag oruulah button script -->
-    <script defer src="Scripts/input.js"></script>
+    <script defer src="Scripts/search.js"></script>
 
     <footer class="footer">
         <ul class="footer-mid">
