@@ -15,7 +15,7 @@ function changeImg(img){
     const cancelBtn = document.querySelector("#cancel-btn")
     defaultBtn.addEventListener("change", function(){
         const file = this.files[0]
-        const  fileType = file['type']
+        const fileType = file['type']
         const validImageTypes = ['image/jpeg']
         if (!validImageTypes.includes(fileType)) {
             alert("Буруу файл оруулсан байна. jpg өргөтгөлтэй файл оруулна уу.")
