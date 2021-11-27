@@ -14,7 +14,6 @@ function changeImg(img){
     const fileName = document.querySelector(".file-name")
     const cancelBtn = document.querySelector("#cancel-btn")
     defaultBtn.addEventListener("change", function(){
-        console.log(defaultBtn)
         const file = this.files[0]
         const  fileType = file['type']
         const validImageTypes = ['image/jpeg']
@@ -30,7 +29,7 @@ function changeImg(img){
                 wrapper.classList.add("active");
             }
             cancelBtn.addEventListener("click", function(){
-                img.src = null;
+                img.src = "";
                 wrapper.classList.remove("active");
                 fileName.textContent = " ";
             });
@@ -45,7 +44,6 @@ function changeImg(img){
 
 function init() {
     if(document.querySelector("#uploadImageForm")){
-        console.log("hello upload here")
         changeImg(document.querySelector("#imageBoi"))
         const uploadImageForm = document.getElementById("uploadImageForm")
         uploadImageForm.addEventListener("submit", function(e){
@@ -71,7 +69,6 @@ function init() {
     }
 
     if(document.querySelector("#searchImage")){
-        console.log("hello search here")
         changeImg(document.querySelector("#imageBoi"))
         const searchImage = document.getElementById("searchImage")
         searchImage.addEventListener("submit", function(e){
